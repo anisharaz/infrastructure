@@ -1,0 +1,5 @@
+docker_registry = {
+  url      = "registry-1.docker.io"
+  username = "dockerhub_username"
+  password = "dockerhub_password"
+}
