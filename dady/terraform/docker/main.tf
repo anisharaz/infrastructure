@@ -58,7 +58,7 @@ resource "docker_container" "static-server" {
   image = docker_image.nginx-alpine.image_id
   volumes {
     host_path      = "/home/ubuntu/static_serve"
-    container_path = "/static"
+    container_path = "/usr/share/nginx/html/"
   }
   networks_advanced {
     name         = "deploy"
